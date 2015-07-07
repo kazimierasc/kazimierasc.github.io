@@ -1,0 +1,91 @@
+html {
+	font-family:Arial,Helvetica,sans-serif;
+	background:#12263C;
+}
+h1,h2,h3,h4,h5 {
+	padding:10px;
+}
+h1 {
+	font-size:2em;
+}
+h2 {
+	font-size:1.5em;
+}
+h3 {
+	font-size:1.2em;
+}
+h4 {
+	font-size:1.1em;
+	margin-bottom:0;
+}
+h5 {
+	font-size:1em;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper {
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	background:#EBEDE7;
+}
+.head {
+	text-align:center;
+	background:#2B3952;
+	color:#FFFFFF;
+}
+.headnav {
+	width:50%;
+	float:left;
+	padding:10px 0px;
+	color:#FFFFFF;
+}
+.headnav:hover {
+	background:#E3C720;
+	color:#000000;
+}
+.clearfix {
+	clear:both;
+}
+p {
+	padding:10px;
+}
+.break {
+	background:#E3C720;
+}
+.workshop {
+	background:#349609;
+	color:#FFFFFF;
+}
+.workshop a {
+	color:#FFFFFF;
+}
+.footer {
+	background:#2B3952;
+	color:#FFFFFF;
+}
+.footer a {
+	color:#FFFFFF;
+}
+
+table {
+	margin-left:10px;
+	margin-right:10px;
+}
+thead {
+	background:#E3C720;
+	font-weight:bold;
+}
+td {
+	padding:10px;
+}
+tbody tr:nth-of-type(2n) {
+	background:#2B3952;
+	color:#FFFFFF;
+}
+tbody tr:nth-of-type(n) a {
+	color:#000000;
+}
+tbody tr:nth-of-type(2n) a {
+	color:#FFFFFF;
+}
