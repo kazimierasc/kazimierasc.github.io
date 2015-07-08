@@ -4,6 +4,8 @@ app.controller('top',['$scope','mode',function ($scope,mode) {
 }]);
 app.controller('gallery',['$scope','mode',function ($scope,mode) {
 	$scope.wallpapers = [
+		{"name":"talent","description":"You really can't make up for a lack of talent with effort. ¯\\_(ツ)_/¯"},
+		{"name":"velnias","description":"Velnias slypi detalėse. Ir dėvi Pradą."},
 		{"name":"biedni","description":"Teisybė yra vertybė. Parodyk tai visiems šiuo valpeiperiu. Įkvėptas stalo žaidimų ir merfio dėsnių."},
 		{"name":"durdomas","description":"Pripažinimas yra pirmas žingsnis. Levandų spalva drioksteli subtilia prabanga."},
 		{"name":"kontora","description":"Prasti popieriai? Netvarka? Viskas vyksta ne pagal planą?"},
