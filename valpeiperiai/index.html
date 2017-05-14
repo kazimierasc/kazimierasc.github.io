@@ -34,7 +34,7 @@
                     <p>{{wallpaper.description}}</p>
                 </div>
                 <div class="links">
-                    <p class="resolution" ng-repeat="resolution in resolutions"><a href="img/{{wallpaper.name}}/{{wallpaper.name}}-{{resolution.number}}.png">{{resolution.name}}</a></p>
+                    <p class="resolution" ng-repeat="size in wallpaper.sizes"><a href="img/{{wallpaper.name}}/{{wallpaper.name}}-{{size}}.png">{{getResolutionName(size)}}</a></p>
                 </div>
             </div>
         </section>

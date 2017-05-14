@@ -4,13 +4,13 @@ app.controller('top',['$scope','mode',function ($scope,mode) {
 }]);
 app.controller('gallery',['$scope','mode',function ($scope,mode) {
 	$scope.wallpapers = [
-		{"name":"talent","description":"You really can't make up for a lack of talent with effort. ¯\\_(ツ)_/¯"},
-		{"name":"velnias","description":"Velnias slypi detalėse. Ir dėvi Pradą."},
-		{"name":"biedni","description":"Teisybė yra vertybė. Parodyk tai visiems šiuo valpeiperiu. Įkvėptas stalo žaidimų ir merfio dėsnių."},
-		{"name":"durdomas","description":"Pripažinimas yra pirmas žingsnis. Levandų spalva drioksteli subtilia prabanga."},
-		{"name":"kontora","description":"Prasti popieriai? Netvarka? Viskas vyksta ne pagal planą?"},
-		{"name":"laivas","description":"Skandalinga frazė - skandalingam gyvenimui."},
-		{"name":"paslauga","description":"Meškų paslaugos dažnai lieka neįvertintos."}
+		{"name":"davai", "description":"Nu please nu.", "sizes":["huge", "facebook"]},
+		{"name":"velnias","description":"Velnias slypi detalėse. Ir dėvi Pradą.", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]},
+		{"name":"biedni","description":"Teisybė yra vertybė. Parodyk tai visiems šiuo valpeiperiu. Įkvėptas stalo žaidimų ir merfio dėsnių.", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]},
+		{"name":"durdomas","description":"Pripažinimas yra pirmas žingsnis. Levandų spalva drioksteli subtilia prabanga.", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]},
+		{"name":"kontora","description":"Prasti popieriai? Netvarka? Viskas vyksta ne pagal planą?", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]},
+		{"name":"laivas","description":"Skandalinga frazė - skandalingam gyvenimui.", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]},
+		{"name":"paslauga","description":"Meškų paslaugos dažnai lieka neįvertintos.", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]}
 	];
 	$scope.resolutions = [
 		{"name":"1024 x 768","number":"01"},
@@ -22,8 +22,25 @@ app.controller('gallery',['$scope','mode',function ($scope,mode) {
 		{"name":"1440 x 900","number":"07"},
 		{"name":"1680 x 1050","number":"08"},
 		{"name":"1920 x 1080","number":"09"},
-		{"name":"1920 x 1200","number":"10"}
+		{"name":"1920 x 1200","number":"10"},
+		{"name":"Iš didelio neiškris","number":"huge"},
+		{"name":"FB Cover", "number":"facebook"}
 	];
+
+	function getResolution(number) {
+		console.log($scope.resolutions, number);
+
+		for (var i = 0; i < $scope.resolutions.length; i++) {
+			if ($scope.resolutions[i].number == number) {
+				return $scope.resolutions[i];
+			}
+		}
+	};
+
+	$scope.getResolutionName = function(number) {
+		return getResolution(number).name;
+	}
+
 	$scope.mode = mode;
 }]);
 app.service('mode',[function() {
