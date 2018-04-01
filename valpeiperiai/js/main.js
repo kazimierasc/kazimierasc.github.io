@@ -4,6 +4,7 @@ app.controller('top',['$scope','mode',function ($scope,mode) {
 }]);
 app.controller('gallery',['$scope','mode',function ($scope,mode) {
 	$scope.wallpapers = [
+		{"name":"stroshna", "description":"Naujas katalogas jau parduotuvėse.", "sizes":["huge", "facebook"]},
 		{"name":"davai", "description":"Nu please nu.", "sizes":["huge", "facebook"]},
 		{"name":"velnias","description":"Velnias slypi detalėse. Ir dėvi Pradą.", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]},
 		{"name":"biedni","description":"Teisybė yra vertybė. Parodyk tai visiems šiuo valpeiperiu. Įkvėptas stalo žaidimų ir merfio dėsnių.", "sizes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"]},
